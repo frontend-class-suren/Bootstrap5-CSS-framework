@@ -3,12 +3,19 @@
     "development"
   ],
   "hints": {
+<<<<<<< HEAD
     "compat-api/css": [
       "default",
       {
         "ignore": [
           "user-select"
         ]
+=======
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off"
+>>>>>>> 8f979a952d640deecf79515019935387ff8a587b
       }
     ]
   }
