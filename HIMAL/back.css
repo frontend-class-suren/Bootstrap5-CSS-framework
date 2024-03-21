@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.box {
+    width: 100%;
+    min-width: 100vh;
+    background: #756E50;
+    padding: 12px;
+}
+
+.work{
+    width: 100%;
+    max-width: 540px;
+    background: #006F82;
+    margin: 60px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+
+.work h2 {
+    color: darkblue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom right, khaki, black);
+    border-radius: 28px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 48px;
+    background-image: linear-gradient(to bottom right, rgb(204, 15, 15), darkgrey);
+    color: darkblue;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 44px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url(./uncheck-64.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: aliceblue;
+    text-decoration: line-through; 
+}
+
+ul li.checked::before{
+    background-image: url(./kisspng-check-mark-symbol-clip-art-ssc-exam-pattern-5b4309495a5aa1.4367867115311199453701.png);
+}
+
+ul li span {
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size: 22px;
+    color:#756E50;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover {
+    background: #006F82;
+    border-radius: 50%;
+}
+
+.delete{
+    display: none;
+}
