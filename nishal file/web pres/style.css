@@ -135,55 +135,62 @@ body {
     .team-member {
         text-align: center;
         margin-bottom: 30px;
+        background-color: #f9f9f9; /* Light gray background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
       }
-  
+      
       .team-member img {
-        max-width: 100%;
+        max-width: 80%; /* Adjust image width */
         border-radius: 50%;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
       }
-  
+      
       .team-member h3 {
         font-size: 24px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        color: #333; /* Dark text color */
       }
-  
+      
       .team-member p {
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        color: #666; /* Gray text color */
       }
-  
+      
       .social-icons {
-        margin-bottom: 20px;
+        margin-top: 15px;
       }
-  
+      
       .social-icons a {
         display: inline-block;
         margin-right: 10px;
         color: #007bff; /* Blue color */
       }
-  
+      
       .gallery-item {
         margin-bottom: 30px;
       }
-  
+      
       .gallery-item img {
         max-width: 100%;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
         transition: transform 0.3s ease;
       }
-  
+      
       .gallery-item img:hover {
         transform: scale(1.05);
       }
+      
       .gallery-bg {
         background-image: url('https://www.solidbackgrounds.com/images/2048x1536/2048x1536-gray-blue-solid-color-background.jpg');
         background-size: cover;
         background-position: center;
         padding-top: 80px; /* Adjust this value as needed */
         padding-bottom: 80px; /* Adjust this value as needed */
-        height: fit-content;
-        width:auto ;
       }
+      
       
