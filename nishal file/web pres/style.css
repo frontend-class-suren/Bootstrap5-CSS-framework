@@ -1,0 +1,189 @@
+
+.carousel-background {
+    background-image: url('https://c1.wallpaperflare.com/preview/557/957/173/yellow-flowers-floral-nature-natural.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; /* Adjust height as needed */
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Adjust carousel-inner styles */
+  .carousel-inner {
+    max-width: 800px; /* Adjust max-width as needed */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  }
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+  }
+
+  /* Title Page */
+  .title-page {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .color-a {
+    color: #007bff; /* Blue color */
+  }
+
+  /* Stuff Section */
+  .stuff {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+
+  .blur {
+    color: #666; /* Gray color */
+  }
+
+  .my-social {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .my-social li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .my-social li:last-child {
+    margin-right: 0;
+  }
+
+  .my-social li a {
+    color: #007bff; /* Blue color */
+  }
+
+  /* Goal Section */
+  .goal-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff; /* White color */
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #007bff; /* Blue color */
+    float: left;
+    margin-right: 20px;
+  }
+
+  .goal-desc {
+    overflow: hidden;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stuff {
+      margin-top: 20px;
+    }
+  }
+    .team-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .team-member img {
+      max-width: 100%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .team-member h3 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .team-member p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #007bff; /* Blue color */
+    }
+
+    .gallery-item {
+      margin-bottom: 30px;
+    }
+
+    .gallery-item img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+    .team-member {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      .team-member img {
+        max-width: 100%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+  
+      .team-member h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+  
+      .team-member p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      .social-icons {
+        margin-bottom: 20px;
+      }
+  
+      .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #007bff; /* Blue color */
+      }
+  
+      .gallery-item {
+        margin-bottom: 30px;
+      }
+  
+      .gallery-item img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        transition: transform 0.3s ease;
+      }
+  
+      .gallery-item img:hover {
+        transform: scale(1.05);
+      }
+      .gallery-bg {
+        background-image: url('https://www.solidbackgrounds.com/images/2048x1536/2048x1536-gray-blue-solid-color-background.jpg');
+        background-size: cover;
+        background-position: center;
+        padding-top: 80px; /* Adjust this value as needed */
+        padding-bottom: 80px; /* Adjust this value as needed */
+        height: fit-content;
+        width:auto ;
+      }
+      

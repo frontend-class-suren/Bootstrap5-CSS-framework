@@ -7,22 +7,18 @@
   <title>Bootstrap Navbar</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Font Awesome CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-lightblue"> <!-- bg-lightblue added for light blue background -->
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="your-logo.png" alt="Company Logo" class="logo">
-      Company Name
+      Modest
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,57 +31,218 @@
         <li class="nav-item">
           <a class="nav-link" href="#">ABOUT</a>
         </li>
-        <!-- Add more navbar links here -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">WORK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">TEAM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FEATURES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Updated HTML with Bootstrap 5 and CSS enhancements -->
 
-<!-- Carousel -->
 <div class="container">
-  <!-- Carousel markup goes here -->
+  <div class="row">
+    <div class="col-12">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-background">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h1 class="display-5">WE ARE MODEST</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crfermentum quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at.</p>
+                <a href="#" class="btn btn-primary">View More</a>
+                <a href="#" class="btn btn-secondary">Video Tour</a>
+              </div>
+              <div class="carousel-item">
+                <h1 class="display-5">DEDICATION TO THE CUSTOMERS</h1>
+                <p>01 Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. WORKING CLOSELY WITH OUR CLIENTS Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum 02 Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</p>
+                <a href="#" class="btn btn-primary">View More</a>
+                <a href="#" class="btn btn-secondary">Video Tour</a>
+              </div>
+              <div class="carousel-item">
+                <h1 class="display-5">INCREASE HAPPINESS</h1>
+                <p>03 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.</p>
+                <a href="#" class="btn btn-primary">View More</a>
+                <a href="#" class="btn btn-secondary">Video Tour</a>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>        
+  </div>
 </div>
 
-<!-- Updated HTML with Bootstrap 5 and CSS enhancements -->
+<section class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="build title-page hidding animated" data-animated="bounceInUp">
+        <h2 class="color-a">WE ARE MODEST</h2>
+      </div>
+    </div>
+  </div>
 
-<!-- Team Section -->
-<section class="team-section">
-  <!-- Team members markup goes here -->
+  <div class="row">
+    <div class="col-md-6 col-lg-6 hidding animated delay2" data-animated="bounceInUp">
+      <div class="build stuff">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis lacusullamcorper at. </p>
+        <p class="blur">Phasellus sollicitudin ante eros ornare, <strong>sit amet luctus lorem semper</strong>. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
+        <ul class="list-inline my-social">
+          <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-git fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa fa-behance fa-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-6 hidding animated delay3" data-animated="bounceInUp">
+      <div class="build stuff clearfix">
+        <article class="clearfix">
+          <div class="goal-number bg-a pull-left">01</div>
+          <div class="goal-desc">
+            <h3>DEDICATION TO THE CUSTOMERS</h3>
+            <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. </p>
+          </div>
+        </article>
+        <article class="clearfix">
+          <div class="goal-number bg-a pull-left">02</div>
+          <div class="goal-desc">
+            <h3>WORKING CLOSELY WITH OUR CLIENT</h3>
+            <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. </p>
+          </div>
+        </article>
+        <article class="clearfix">
+          <div class="goal-number bg-a pull-left">03</div>
+          <div class="goal-desc">
+            <h3>INCREASE HAPPINESS</h3>
+            <p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
 </section>
+<div>
+  <h2 class="text-center">MEET THE TEAM</h2>
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3">
+        <div class="team-member text-center p-4 border">
+          <img src="gloria_bromley_image_url" alt="Gloria Bromley" title="Social Media: @gloriabromley" data-bs-toggle="tooltip" data-bs-placement="top">
+          <h3>GLORIA BROMLEY</h3>
+          <p>Graphic Designer</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="team-member text-center p-4 border">
+          <img src="paul_torres_image_url" alt="Paul Torres" title="Social Media: @paultorres" data-bs-toggle="tooltip" data-bs-placement="top">
+          <h3>PAUL TORRES</h3>
+          <p>Head of Development</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="team-member text-center p-4 border">
+          <img src="judith_gillette_image_url" alt="Judith Gillette" title="Social Media: @judithgillette" data-bs-toggle="tooltip" data-bs-placement="top">
+          <h3>JUDITH GILLETTE</h3>
+          <p>CEO and Founder</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="team-member text-center p-4 border">
+          <img src="delores_reed_image_url" alt="Delores Reed" title="Social Media: @deloresreed" data-bs-toggle="tooltip" data-bs-placement="top">
+          <h3>DELORES REED</h3>
+          <p>Client Service Director</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- Updated HTML with Bootstrap 5 and CSS enhancements -->
-
-<!-- Gallery Section -->
-<section class="gallery-section">
-  <!-- Gallery markup goes here -->
-</section>
-
-<!-- Updated HTML with Bootstrap 5 and CSS enhancements -->
-
-<!-- Feature Section -->
-<section class="feature-section">
-  <!-- Feature cards markup goes here -->
-</section>
-
-<!-- Updated HTML with Bootstrap 5 and CSS enhancements -->
-
-<!-- Contact Section -->
-<section class="contact-section">
-  <!-- Contact form markup goes here -->
-</section>
-
-<!-- Updated HTML with Bootstrap 5 and CSS enhancements -->
-
-<!-- Footer -->
-<footer class="footer">
-  <!-- Footer content goes here -->
-</footer>
-
-<!-- Updated HTML with Bootstrap 5 and CSS enhancements -->
-
-<!-- Bootstrap JS and custom scripts -->
+<div class="gallery-bg">
+  <div class="container py-5">
+    <h2 class="text-center text-white mb-4">Lovely Work</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/1015/400/300" class="gallery-image img-fluid" alt="Image 1">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/1018/400/300" class="gallery-image img-fluid" alt="Image 2">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/1019/400/300" class="gallery-image img-fluid" alt="Image 3">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/1020/400/300" class="gallery-image img-fluid" alt="Image 4">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/1021/400/300" class="gallery-image img-fluid" alt="Image 5">
+        </div>
+      </div>
+      <div class="col">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/1022/400/300" class="gallery-image img-fluid" alt="Image 6">
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <button class="btn btn-primary">Show Me More</button>
+    </div>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script src="scripts.js"></script>
