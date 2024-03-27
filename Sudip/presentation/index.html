@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Presentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+
+</head>
+<style>
+.underline {
+    position: relative;
+    text-decoration: none; /* Remove default underline */
+    bottom: 0.17em;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.1em; 
+    width: 100%;
+    border-bottom: 1px solid;
+}
+.navbar-nav li :hover {
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+li.active a{
+    border: 1px solid #23b7a4;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #23b7a4;
+}
+li.active a:hover{
+    border: 1px solid #23b7a4;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #23b7a4;
+}
+ul li{
+    display: inline-block;
+    margin-left: 7px;
+    line-height: 27px;
+    height: 30px;
+    width: 106px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.h1{
+    border-left: 10px solid #e1e6ea;
+}
+.social-media i{
+  border: 2px solid #e1e6ea;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #e1e6ea;
+  color: white;
+}
+.social-media i:hover{
+    background-color: black;
+    color: #e1e6ea;
+}
+.one{
+    float: left;
+    background-color: #23b7a4;
+    padding: 8px;
+    font-size: 15px;
+}
+.h3{
+    font-size: 22px;
+}
+/* .line{
+    margin-left : 70px;
+    margin-right: 70px;
+} */
+.info {
+    position: relative;
+}
+
+.img_item {
+    position: relative; /* Ensure child elements position properly */
+    background-size: cover;
+    background-position: center;
+    height: 350px; 
+    transition: height 0.3s;
+}
+
+.info:hover .links i {
+    display: flex;
+}
+.info:hover .self_info {
+    background-color: black; 
+    color: white;
+}
+.info:hover{
+    opacity: 0.85;
+}
+
+
+
+.links {
+    /* display: none; */
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); 
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.links i {
+    color: white;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: none;
+    transition: opacity 3s;
+    transition: background-color 0.3s;
+}
+.self_info{
+    background-color: #e1e6ea;
+    transition: background-color 1s;
+}
+.links a{
+    text-decoration: none;
+}
+.links a:hover i{
+background-color: blue;
+}
+.workc{
+    background-color: #3a454d;
+    position: relative;
+}
+.img_item2{
+    width: 100%;
+    position: relative; /* Ensure child elements position properly */
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    /* transition: opacity 0.5s; */
+    margin-bottom: 25px;
+    
+}
+.h6{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color:#292f36;
+    /* text-align: center; */
+    box-sizing: border-box;
+    /* transition: background-color 0.3s; */
+    /* pointer-events: none; */
+    /* transition: opacity 0.3s; */
+    opacity: 0;
+    color: white;
+}
+.img_item2:hover .h6 {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.img_item2:hover{
+    opacity: 0.9;
+}
+
+
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-sm">
+                <a style="font-weight: bold; font-size: 25px;" class="navbar-brand" href="index.html">M<span class="underline">o</span>DEST.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Togle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="active">
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#work">WORK</a>
+                        </li>
+                        <li>
+                            <a  href="#team">TEAM</a>
+                        </li>
+                        <li>
+                            <a href="#services">SERVICES</a>
+                        </li>
+                        <li>
+                            <a  href="features">FEATURES</a>
+                        </li>
+                        <li>
+                            <a  href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+    </section>
+
+    <section class="about_us" id="about">
+        <div class="container py-5">
+            <h1 class="h1">WE ARE MODEST.</h1>
+            <div class="row pt-4">
+                <div class="col-lg-7">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint quod rerum ratione, accusamus veritatis amet rem alias iste, omnis minus nostrum magni, et eveniet quas velit nulla! Nemo perspiciatis animi itaque maxime laudantium sapiente asperiores laborum cum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, laudantium!</p>
+                    <p class="mt-2">Lorem ipsum dolor sit amet. <strong>Lorem ipsum dolor sit amet.</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos nam omnis laudantium tempore ea voluptas officia, repellendus vitae esse rem officiis reiciendis voluptatibus quis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, non.</p>
+                    
+                    <div class="social-media my-5 ">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""></a><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""></a><i class="fa-brands fa-google"></i></a>
+                        <a href=""></a><i class="fa-solid fa-bowling-ball"></i></a>
+                        <a href=""></a><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-1 mt-1">
+                            <span class="one">01</span>
+                        </div>
+                        <div class="col-11 px-4">
+                            <h3 class="h3">DEDICATION TO THE CUSTOMERS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error impedit officia saepe minus. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-1 mt-1">
+                            <span class="one">02</span>
+                        </div>
+                        <div class="col-11 px-4">
+                            <h3 class="h3">WORKING CLOSELY WITH OUR CLIENTS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error impedit officia saepe minus. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-1 mt-1">
+                            <span class="one">03</span>
+                        </div>
+                        <div class="col-11 px-4">
+                            <h3 class="h3">INCREASE HAPPINESS</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error impedit officia saepe minus. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="team">
+
+        <div class="container py-5">
+            <hr>
+            <h1 class="h1 mt-5">MEET THE TEAM</h1>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="info">
+                        <div class="img_item" style="background-image: url(./E59E001E-705E-4C1F-9DB3-E767D8840A3B_1_105_c.jpeg);">
+                            <div class="links d-flex">
+                            <a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/su.dip.3363334"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+
+                        </div>
+                        <div class="self_info pt-3 px-2 pb-2">
+                            <h4>Sudip Rayamajhi</h4>
+                            <i>CEO and Founder</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="info">
+                        <div class="img_item" style="background-image: url(./63A0E2BC-517C-4EBC-8CF0-E32877068646_1_105_c.jpeg);">
+                            <div class="links d-flex">
+                            <a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/su.dip.3363334"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+
+                        </div>
+                        <div class="self_info pt-3 px-2 pb-2">
+                            <h4>Sudip Rayamajhi</h4>
+                            <i>Head of Development</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="info">
+                        <div class="img_item" style="background-image: url(./6BE2601C-2C1F-438B-B04B-31F3CDE28573_1_105_c.jpeg);">
+                            <div class="links d-flex">
+                            <a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/su.dip.3363334"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+
+                        </div>
+                        <div class="self_info pt-3 px-2 pb-2">
+                            <h4>Sudip Rayamajhi</h4>
+                            <i>Graphic Designer</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12">
+                    <div class="info">
+                        <div class="img_item" style="background-image: url(./B7A344F1-57F0-454B-A01F-758B6A7A4882_1_105_c.jpeg);">
+                            <div class="links d-flex">
+                            <a href=""><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/su.dip.3363334"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+
+                        </div>
+                        <div class="self_info pt-3 px-2 pb-2">
+                            <h4>Sudip Rayamajhi</h4>
+                            <i>Client Server Director</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section id="work" class="workc">
+        <div class="container">
+            <hr>
+            <h1 style="color: white;" class="h1 mt-5">LOVELY WORK</h1>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="infos">
+                        <div class="img_item2" style="background-image: url(./work1.avif);">
+                            <div class="links2 d-flex">
+                                <h6 class="h6">PARTNERSHIP GULDLINES</h6>
+                            </div>
+
+                        </div>
+
+                    
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="infos">
+                        <div class="img_item2" style="background-image: url(./work2.webp);">
+                            <div class="links2 d-flex">
+                                <h6 class="h6">PARTNERSHIP GULDLINES</h6>
+                            </div>
+
+                        </div>
+
+                    
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="infos">
+                        <div class="img_item2" style="background-image: url(./work3.webp);">
+                            <div class="links2 d-flex">
+                                <h6 class="h6">PARTNERSHIP GULDLINES</h6>
+                            </div>
+
+                        </div>
+
+                    
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="infos">
+                        <div class="img_item2" style="background-image: url(./work4.jpeg);">
+                            <div class="links2 d-flex">
+                                <h6 class="h6">PARTNERSHIP GULDLINES</h6>
+                            </div>
+
+                        </div>
+
+                    
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="infos">
+                        <div class="img_item2" style="background-image: url(./work5.jpeg);">
+                            <div class="links2 d-flex">
+                                <h6 class="h6">PARTNERSHIP GULDLINES</h6>
+                            </div>
+
+                        </div>
+
+                    
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="infos">
+                        <div class="img_item2" style="background-image: url(./work6.jpeg);">
+                            <div class="links2 d-flex">
+                                <h6 class="h6">PARTNERSHIP GULDLINES</h6>
+                            </div>
+
+                        </div>
+
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 mt-4 pb-5 d-flex justify-content-center">
+                <button class="btn btn-outline-light">SHOW ME MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container py-5">
+        <h1 class="h1 mt-5">WHAT WE DO.</h1>
+
+        
+        </div>
+    </section>
+
+
+
+</body>
+</html>
