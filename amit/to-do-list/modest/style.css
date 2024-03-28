@@ -3,12 +3,14 @@
     margin:0;
     box-sizing: border-box;
 }
+/* nav section starts here  */
+
 
 .nav-link:hover{
 border-bottom: 1px solid cyan; 
 }
 
-/* banner sec */
+/* banner sec starts here*/
 
 #banner{
     background-image:url(./stone-podium-tropical-forest.jpg);
@@ -31,7 +33,7 @@ border-bottom: 1px solid cyan;
 }
 
 
-
+/* about us section starts here  */
 
 #aboutus {
     display:flex;
@@ -81,7 +83,7 @@ background-color:aliceblue;
     border-left:10px solid gray;
 }
 
-h3{
+.h3{
     font-size: 20px;
 }
 
@@ -151,7 +153,7 @@ h3{
     }
 
     .social-icon-style1 a:hover{
-background-color: rgb(110, 109, 109);
+        background-color: rgb(110, 109, 109);
     }
     
     .team-bg-shape img {
@@ -161,11 +163,13 @@ background-color: rgb(110, 109, 109);
         z-index: 0
     }
     
-    @media screen and (max-width: 991px) {
-        .team-style1 .team-info {
-            padding:20px
-        }
-    }
+   
+
+
+
+
+
+
     
     .team-style1 .social-icon-style1 {
         border-top: 2px dotted rgba(255,255,255,0.3);
@@ -228,7 +232,6 @@ background-color: rgb(110, 109, 109);
         color: white;
     }
     .for-image:hover{
-        /* opacity: 0.85; */
         transition:ease-in 5s;
     }
     
@@ -316,10 +319,53 @@ background-color: rgb(110, 109, 109);
     }
 
 
+    .feature-section{
+        background-color:#2f353c;
+    }
 
+    .feat {
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+    }
+    
+    .featu{
+        color:white;
+        font-weight: 300;
+    }
 
+    .forfe{
+        color:white;
+        padding-left: 10px;
+    }
 
+    .forfe1{
+        /* color:white; */
+        padding-left: 10px;
+    }
 
+    .my-form {
+        color: #6b6c6d;
+    }
+    .my-form .btn-default {
+        background-color: #4bdcf0;
+
+        color: #fff;
+        /* border-radius: 0; */
+    }
+    .my-form .btn-default:hover {
+        background-color: #41a9be;
+
+        color: #fff;
+    }
+    .my-form .form-control {
+        border-radius: 0;
+    }
+
+    .btn-default {
+        padding:10px;
+        border-radius:5px;
+    }
 
 
 
@@ -343,19 +389,6 @@ background-color: rgb(110, 109, 109);
         font-size: 20px;
     }
 
-    /* .row {
-        display:flex;
-        flex-wrap: wrap;
-        flex:0;
-      
-        flex-direction: row;
-        padding:0;
-    } */
-
-
-    /* .col-11{
-        padding:0px 0px;
-    } */
 
 }
 
@@ -365,11 +398,45 @@ background-color: rgb(110, 109, 109);
         backdrop-filter:blur(10px);
     }
 
-}
+        .team-style1 .team-info {
+            padding:20px
+        }
+    }
+
+
+
 
 @media(max-width:425px){
     .abc p a{
         font-size: 15px;
         padding:3px 8px;
     }
+}
+
+
+@media(max-width:500px){
+
+.number{
+    background-color: rgb(100, 224, 228);
+    padding:8px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    /* margin-top: 10px; */
+}
+
+.h3{
+    font-size: 15px;
+}
+}
+
+@media(max-width:390px){
+    .number{
+        display:none;
+    }
+    
+    .h3{
+        
+        font-weight: 700;
+        text-decoration: underline;
+}
 }
