@@ -1,0 +1,29 @@
+*{
+    text-decoration: none;
+}
+
+.nav{
+    /* display: flex; */
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a{
+    color: white;
+}
+
+li{
+    list-style: none;
+    /* color: white; */
+    display: inline-block;
+}
+
+li a{
+    color: grey;
+    font-style: bold;
+}
