@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<style>
+    .large{
+        font-size: 2.2rem;
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+        font-weight: bold;
+
+    }
+    .bull{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+</style>
+<body> 
+    <div class="container">
+        <header class="blog-header py-3 border-bottom">
+            <div class="row d-flex justify-content-end align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="link-secondary" href="">Subscribe</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark large" href="">Large</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center gap-3">
+                    <a class="link-secondary" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="btn btn-sm btn-outline-secondary" href="">Sign up</a>
+                </div>
+            </div>
+        </header>
+        <div class="py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 link-secondary" href="">World</a>
+                <a class="p-2 link-secondary" href="">U.S.</a>
+                <a class="p-2 link-secondary" href="">Technology</a>
+                <a class="p-2 link-secondary" href="">Design</a>
+                <a class="p-2 link-secondary" href="">Culture</a>
+                <a class="p-2 link-secondary" href="">Business</a>
+                <a class="p-2 link-secondary" href="">Politics</a>
+                <a class="p-2 link-secondary" href="">Opinion</a>
+                <a class="p-2 link-secondary" href="">Science</a>
+                <a class="p-2 link-secondary" href="">Health</a>
+                <a class="p-2 link-secondary" href="">Style</a>
+                <a class="p-2 link-secondary" href="">Travel</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container bg-dark text-white p-4 p-md-5 rounded">
+        <div class="col-md-6">
+        <h1 class="display-4 fst-italic.bull
+">Title of a longer featured blog post</h1>
+        <p class="lead mb-0" >Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+        <p class="lead mb-0 mt-2">
+            <a href="" class="fw-bold text-white">Continue reading...</a>
+        </p>
+    </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row mb-2">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3>Featured Post </h3>
+                        <p class="mb-4 text-muted">Nov 12</p>
+                        <p class="mb-4">This is wider card with supporting text below is as a natural lead-in to additional content.</p>
+                        <a href="">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3>Featured Post </h3>
+                        <p class="mb-4 text-muted">Nov 12</p>
+                        <p class="mb-4">This is wider card with supporting text below is as a natural lead-in to additional content.</p>
+                        <a href="">Continue Reading</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+             <div class="col-md-8">
+            <h2 class="fst-italic mb-4 border-bottom pb-4 font">From the Firehouse</h2>
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: 50px;" class="mt-2">Sample blog post</h1>
+            <p class="text-secondary">January 1, 2021 by <a href="">Mark</a></p>
+            <p class="mt-4 pb-3 border-bottom">This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+            <p class="mt-3">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: 50px;" class="mt-2">Blockquotes</h2>
+            <p>This is an example blockquote in action:</p>
+            <p style="font-size: 20px;" class="display-6 mt-2">Quoted text goes here.</p>
+            <p class="mt-2">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: 50px;" class="mt-2">Example lists</h2>
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+            <ul>
+                <li>First list item</li>
+                    <li>Second list item with a longer description</li>
+                    <li>Third list item to close it out</li>
+            </ul>
+            <p>And this is an ordered list:</p>
+            <ol>
+                <li>First list item</li>
+                <li>Second list item with a longer description</li>
+                <li>Third list item to close it out</li>
+            </ol>
+            <p>And this is a definiton list:</p>
+            <strong>HyperText Markup Language (HTML)</strong>
+            <p>The language used to describe and define the content of a Web page</p>
+            <strong>Cascading Style Sheets (CSS)</strong>
+            <p>Used to describe the appearance of Web content</p>
+            <strong>JavaScript (JS)</strong>
+            <p>The programming language used to build advanced Web sites and applications</p>
+            <h2 style="font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: 50px;" class="mt-2">Inline HTML elements</h2>
+            <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="#">Mozila Developer Network.</a></p>
+            <ul>
+                <li><strong>To bold text,</strong> <code class="language-plaintext highlighter-rouge">< strong ></code>.</li>
+            </ul>
+            </div>
+           <div class="col-md-4">
+               <div class="stick">
+                   <div class="card border-white bg-light">
+                <div class="card-body">
+                    <h2 class="fst-italic font">About</h2>
+                    <p>Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                </div>
+                  </div>
+                  <div class="card border-white">
+                <div class="card-body">
+                    <h2 class="fst-italic font">Archives</h2>
+                    <div class="link d-flex flex-column gap-1">
+                        <a href="">March 2021</a>
+                        <a href="">February 2021</a>
+                        <a href="">January 2021</a>
+                        <a href="">December 2020</a>
+                        <a href="">November 2020</a>
+                        <a href="">October 2020</a>
+                        <a href="">September 2020</a>
+                        <a href="">August 2020</a>
+                        <a href="">July 2020</a>
+                        <a href="">June 2020</a>
+                        <a href="">May 2020</a>
+                        <a href="">April 2020</a>
+                    </div>
+                    <h2 class="fst-italic font mt-4">Elsewhere</h2>
+                    <div class="link d-flex flex-column gap-1">
+                        <a href="">GitHub</a>
+                        <a href="">Twitter</a>
+                        <a href="">Facebook</a>
+                    </div>
+
+                </div>
+                   </div>
+
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-footer mt-5 p-4 text-center bg-light">
+        <h4>Designed by Prayash Rana</h4>
+        <h5> © 2024 Prayash Rana</h5>
+        <h6>Contact:9866574371 <br>Gmail: raanaa689@gmail.com </h6>
+    </div>
+
+
+
+
+</body>
+</html>
