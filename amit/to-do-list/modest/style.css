@@ -13,13 +13,13 @@ border-bottom: 1px solid cyan;
 /* banner sec starts here*/
 
 #banner{
-    background-image:url(./stone-podium-tropical-forest.jpg);
+    background-image:url(./banner\ image.jpg);
     padding-top: 10%;
     background-repeat: no-repeat;
     background-size: cover;
     /* object-fit: contain; */
     background-position: center center;
-    height:70vh;
+    height:80vh;
     width:auto;
 }
 
@@ -163,7 +163,10 @@ background-color:aliceblue;
         z-index: 0
     }
     
-   
+   .forhide{
+    display: none;
+   }
+
 
 
 
@@ -318,7 +321,25 @@ background-color:aliceblue;
     
     }
 
-
+    .service-item i {
+        font-size: 3rem;
+        color: #25d2bb;
+        padding-bottom: 25px;
+    }
+    
+    .service-item h3 {
+        font-size: 20px;
+        font-weight:500;
+    }
+    
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+  
     .feature-section{
         background-color:#2f353c;
     }
@@ -368,14 +389,46 @@ background-color:aliceblue;
     }
 
 
+    footer{
+        background-color: #2f353c;
+    }
+
+    footer p{
+        padding:10px 10px;
+        color:white
+    }
+
+    .custom-foot{
+        padding:10px 10px;
+    }
+    
+    .custom-foot a{
+        color:white;
+        /* padding-right:20px; */
+        padding:3px;
+    }
+
+    .custom-foot a:hover{
+        color:rgb(111, 108, 108);
+
+    }
+
+    
 
 
 
 
+@media(max-width:1200px){
+    .custom-foot{
+        display: none;
+       }
 
+       footer p{
+        text-align: center;
+        padding:none;
+       }
 
-
-
+}
 
 
 @media(max-width:1024px){
@@ -389,7 +442,12 @@ background-color:aliceblue;
         font-size: 20px;
     }
 
+   .cent{
+    flex-wrap: wrap;
+    align-items: center;
+   }
 
+  
 }
 
 @media(max-width:991px){
@@ -402,6 +460,20 @@ background-color:aliceblue;
             padding:20px
         }
     }
+
+
+@media(max-width:765px){
+    .hidee{
+        display:none;
+    }
+}
+
+@media(max-width:765px){
+    .hidee{
+        display:block;
+    }
+}
+
 
 
 
