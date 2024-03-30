@@ -1,0 +1,257 @@
+
+.underline {
+    position: relative;
+    text-decoration: none; /* Remove default underline */
+    bottom: 0.17em;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1.1em; 
+    width: 100%;
+    border-bottom: 1px solid;
+}
+.navbar-nav li :hover {
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+li.active a{
+    border: 1px solid #23b7a4;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #23b7a4;
+}
+li.active a:hover{
+    border: 1px solid #23b7a4;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #23b7a4;
+}
+ul li{
+    display: inline-block;
+    margin-left: 7px;
+    line-height: 27px;
+    height: 30px;
+    width: 106px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.h1{
+    border-left: 10px solid #e1e6ea;
+}
+.social-media i{
+  border: 2px solid #e1e6ea;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #e1e6ea;
+  color: white;
+}
+.social-media i:hover{
+    background-color: black;
+    color: #e1e6ea;
+}
+.one{
+    float: left;
+    background-color: #23b7a4;
+    padding: 8px;
+    font-size: 15px;
+}
+.h3{
+    font-size: 22px;
+}
+/* .line{
+    margin-left : 70px;
+    margin-right: 70px;
+} */
+.info {
+    position: relative;
+}
+
+.img_item {
+    position: relative; /* Ensure child elements position properly */
+    background-size: cover;
+    background-position: center;
+    height: 350px; 
+    transition: height 0.3s;
+}
+
+.info:hover .links i {
+    display: flex;
+}
+.info:hover .self_info {
+    background-color: black; 
+    color: white;
+}
+.info:hover{
+    opacity: 0.85;
+}
+
+
+
+.links {
+    /* display: none; */
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); 
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.links i {
+    color: white;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: none;
+    transition: opacity 3s;
+    transition: background-color 0.3s;
+}
+.self_info{
+    background-color: #e1e6ea;
+    transition: background-color 1s;
+}
+.links a{
+    text-decoration: none;
+}
+.links a:hover i{
+background-color: blue;
+}
+.workc{
+    background-color: #3a454d;
+    position: relative;
+}
+.img_item2{
+    width: 100%;
+    position: relative; /* Ensure child elements position properly */
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    /* transition: opacity 0.5s; */
+    margin-bottom: 25px;
+    
+}
+.h6{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color:#292f36;
+    /* text-align: center; */
+    box-sizing: border-box;
+    /* transition: background-color 0.3s; */
+    /* pointer-events: none; */
+    /* transition: opacity 0.3s; */
+    opacity: 0;
+    color: white;
+}
+.img_item2:hover .h6 {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.img_item2:hover{
+    opacity: 0.9;
+}
+
+.padding{
+    padding-top: 150px;
+    padding-left: 80px;
+}
+@media(max-width:900px){
+    .padding{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+}
+.sudip i{
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: #23b7a4;
+}
+.sudip h3{
+    font-size: 16px; font-weight: bolder;
+}
+.sudip{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.features{
+    background-color: #3a454d;
+}
+.tauko{
+    font-size: 16px; font-weight: bolder;
+    color: white;
+}
+.tauko2{
+    color: white;
+}
+.fote1{
+    background-color: #3a454d;
+    padding: 20px;
+    color: white;
+}
+.foot i{
+    color: white;
+    padding-left: 12px;
+}
+.error{
+    color: red;
+}
+.foot i:hover{
+    color: rgb(151, 151, 189);
+}
+.animation:hover{
+    background-color: #292f36;
+    /* padding-top: 20px; */
+    /* padding-bottom: 30px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: background-color 0.3s;
+    transition: padding 0.3s;
+}
+.animation{
+    padding: 20px;
+}
+@media (max-width: 680px) {
+    /* Adjust carousel caption font size */
+    .carousel-caption h1 {
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+    .carousel-caption p {
+      font-size: 0.4rem;
+    }
+    /* Adjust button size */
+    .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.5rem;
+      padding: 5px;
+    }
+    .hello{
+        display: none;
+    }
+  }
+  
