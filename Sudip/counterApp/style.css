@@ -1,0 +1,15 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#displayNumber{
+    display: block;
+    text-align: center;
+    font-size: 100px;
+
+}
+#increase, #decrease, #reset{
+    font-size: 30px;
+}
