@@ -1,0 +1,36 @@
+<html>  
+<head>  
+<script>  
+//function to count the button clicks  
+function clickCounting() {  
+  if(typeof(Storage) !== "undefined") {  
+    if (localStorage.clickcount) {  
+      localStorage.clickcount = Number(localStorage.clickcount)+1;  
+    } else {  
+      localStorage.clickcount = 1;  
+    }  
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";  
+  }  
+    //when the browser does not support  
+  else {  
+    document.getElementById("result").innerHTML = "Your browser does not support web storage.";  
+  }  
+}  
+  
+//function to clear the data stored by browser  
+function clearCounting() {  
+    window.localStorage.clear();  
+}  
+</script>  
+</head>  
+<body>  
+  
+<h3> Click the button to see the counter increase.</h3>  
+<p> <button onclick="clickCounting()" type="button">Click to Count</button></p>  
+<div id="result"> </div>  
+<h4> Now close the browser tab or browser window and execute the code again on the browser. <h4>  
+<h3>Note: The counter will start counting from where you leave and is not reset.</h3>  
+<p> <button onclick="clearCounting()" type="button">Clear Count</button></p>  
+  
+</body>  
+</html>

@@ -76,10 +76,10 @@ ul li a{
 .h3{
     font-size: 22px;
 }
-/* .line{
+.line{
     margin-left : 70px;
     margin-right: 70px;
-} */
+}
 .info {
     position: relative;
 }
@@ -184,15 +184,15 @@ background-color: blue;
     padding-left: 50px;
 }
 }
-.sudip i{
+.Nishal i{
     padding-bottom: 30px;
     font-size: 50px;
     color: #23b7a4;
 }
-.sudip h3{
+.Nishal h3{
     font-size: 16px; font-weight: bolder;
 }
-.sudip{
+.Nishal{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -201,11 +201,11 @@ background-color: blue;
 .features{
     background-color: #3a454d;
 }
-.tauko{
+.FIRST{
     font-size: 16px; font-weight: bolder;
     color: white;
 }
-.tauko2{
+.SECOND{
     color: white;
 }
 .fote1{
@@ -223,35 +223,5 @@ background-color: blue;
 .foot i:hover{
     color: rgb(151, 151, 189);
 }
-.animation:hover{
-    background-color: #292f36;
-    /* padding-top: 20px; */
-    /* padding-bottom: 30px; */
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: background-color 0.3s;
-    transition: padding 0.3s;
-}
-.animation{
-    padding: 20px;
-}
-@media (max-width: 680px) {
-    /* Adjust carousel caption font size */
-    .carousel-caption h1 {
-      font-size: 1rem;
-      margin-top: 20px;
-    }
-    .carousel-caption p {
-      font-size: 0.4rem;
-    }
-    /* Adjust button size */
-    .btn {
-      padding: 0.5rem 1rem;
-      font-size: 0.5rem;
-      padding: 5px;
-    }
-    .hello{
-        display: none;
-    }
-  }
-  
+
+
