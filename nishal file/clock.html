@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apna time aaaeyga.</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  #clock {
+    font-size: 3em;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+  <h1>CHECK CURRENT TIME.
+  </h1>
+  <div id="clock"></div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      const timeString = `${hours}:${minutes}:${seconds}`;
+      document.getElementById('clock').textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+
+    updateClock();
+  </script>
+</body>
+</html>

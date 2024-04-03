@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter Site</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  #counter {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <h1>Simple Counter App</h1>
+  <div id="counter">0</div>
+  <button id="incrementBtn">BADXA </button>
+  <button id="decrementBtn">GATXA</button>
+
+  <script>
+    const counterDisplay = document.getElementById('counter');
+    const incrementBtn = document.getElementById('incrementBtn');
+    const decrementBtn = document.getElementById('decrementBtn');
+    let counter = 0;
+    function updateCounter() {
+      counterDisplay.textContent = counter;
+    }
+    incrementBtn.addEventListener('click', function() {
+      counter++;
+      updateCounter();
+    });
+    decrementBtn.addEventListener('click', function() {
+      if (counter > 0) {
+        counter--;
+        updateCounter();
+      }
+    });
+  </script>
+</body>
+</html>

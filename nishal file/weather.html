@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Weather App</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  #weather-container {
+    margin-top: 50px;
+  }
+  #location {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  #weather {
+    font-size: 1.5em;
+  }
+</style>
+</head>
+<body>
+  <h1>weather</h1>
+  <div>
+    <label for="location-input">Enter Location:</label>
+    <input type="text" id="location-input">
+    <button id="search-btn">Search</button>
+  </div>
+  <div id="weather-container">
+    <div id="location"></div>
+    <div id="weather"></div>
+  </div>
+
+  <script>
+    document.getElementById('search-btn').addEventListener('click', () => {
+      const location = document.getElementById('location-input').value;
+      const temperature = Math.floor(Math.random() * 30) + 10; 
+      const description = 'check outside and guess it ownself'; 
+      document.getElementById('location').textContent = `Weather in ${location}:`;
+      document.getElementById('weather').textContent = `${temperature}°C, ${description}`;
+    });
+  </script>
+</body>
+</html>
