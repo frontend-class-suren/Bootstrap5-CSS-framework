@@ -17,3 +17,4 @@ document.addEventListener("DOMContentLoaded", function() {
     
     showMoreButton.addEventListener("click", showMoreImages);
 });
+
