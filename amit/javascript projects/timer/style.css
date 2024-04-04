@@ -1,0 +1,18 @@
+.timerBtn{
+    width: 80px;
+    height: 30px;
+    border: 3px solid;
+    border-radius: 12px;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+#timeDisplay{
+    font-size: 75px;
+    color: #191a19;
+}
+#timeContainer{
+    margin-top: 18%;
+    text-align: center;
+    border-radius: 25px;
+}
