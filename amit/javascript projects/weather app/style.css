@@ -1,0 +1,44 @@
+body{
+  font-family: 'Poppins';
+  background-color: rgb(214, 253, 244);
+  /* font-weight: 400; */
+  text-align: center;
+  margin-top: 15em;
+}
+
+.container {
+  background-color: rgb(197, 231, 231);
+  width:30%;
+  height:30vh;
+  margin-left: 33%;
+
+}
+h1{
+  font-weight:400 ;
+  color:rgb(82, 80, 79);
+}
+#searchInput {
+  width: 300px;
+  padding: 8px 10px;
+  border:none;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+#searchButton {
+  font-family: 'Poppins';
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(97, 171, 169);
+  border:none;
+  color: rgb(233, 236, 240);
+}
+
+#searchButton:hover{
+  background-color: rgb(214, 220, 227);
+  color: rgb(97, 171, 169);
+
+}
+#weatherDisplay {
+  margin-top: 20px;
+}

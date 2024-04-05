@@ -388,6 +388,10 @@ background-color:aliceblue;
         border-radius:5px;
     }
 
+    .form-control {
+        position: sticky;
+    }
+
 
     footer{
         background-color: #2f353c;
