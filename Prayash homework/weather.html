@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Weather App</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+    #container {
+        margin: 50px auto;
+        width: 80%;
+        max-width: 400px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    #weather {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <h1>Simple Weather App</h1>
+        <div id="weather"></div>
+    </div>
+    
+    <script>
+        // Function to fetch weather data
+        async function getWeather() {
+            const apiKey = 'YOUR_API_KEY'; // Replace with your API key
+            const city = 'Butwal'; // Replace with the desired city
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+
+                // Extracting required data from the API response
+                const temperature = data.main.temp;
+                const description = data.weather[0].description;
+
+                // Displaying the weather information
+                const weatherDiv = document.getElementById('weather');
+                weatherDiv.innerHTML = `<p>Temperature: ${temperature}°C</p><p>Description: ${description}</p>`;
+            } catch (error) {
+                console.log('Error fetching weather data: ', error);
+                const weatherDiv = document.getElementById('weather');
+                weatherDiv.innerHTML = "<p>Failed to fetch weather data. Please try again later.</p>";
+            }
+        }
+
+        // Call the function to fetch weather when the page loads
+        window.onload = getWeather;
+    </script>
+</body>
+</html>
