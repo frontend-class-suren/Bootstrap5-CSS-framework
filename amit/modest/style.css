@@ -33,6 +33,8 @@ border-bottom: 1px solid cyan;
 }
 
 
+
+
 /* about us section starts here  */
 
 #aboutus {
@@ -363,6 +365,10 @@ background-color:aliceblue;
     .forfe1{
         /* color:white; */
         padding-left: 10px;
+    }
+
+    textarea{
+        resize: none;
     }
 
     .my-form {
