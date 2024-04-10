@@ -21,19 +21,23 @@
     #weather {
         margin-top: 20px;
     }
+    #search {
+        margin-top: 20px;
+    }
 </style>
 </head>
 <body>
     <div id="container">
         <h1>Simple Weather App</h1>
+        <input type="text" id="search" placeholder="Enter city name">
+        <button onclick="searchWeather()">Search</button>
         <div id="weather"></div>
     </div>
     
     <script>
         // Function to fetch weather data
-        async function getWeather() {
-            const apiKey = 'YOUR_API_KEY'; // Replace with your API key
-            const city = 'Butwal'; // Replace with the desired city
+        async function getWeather(city) {
+            const apiKey = '4fca93cefcfc45ef81a81700240504'; // Replace 'YOUR_API_KEY' with your OpenWeatherMap API key
             const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
             try {
@@ -54,8 +58,11 @@
             }
         }
 
-        // Call the function to fetch weather when the page loads
-        window.onload = getWeather;
+        // Function to handle search
+        function searchWeather() {
+            const city = document.getElementById('search').value;
+            getWeather(city);
+        }
     </script>
 </body>
 </html>
