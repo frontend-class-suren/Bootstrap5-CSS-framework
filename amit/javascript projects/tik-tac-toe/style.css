@@ -1,0 +1,138 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: rgb(9, 210, 210);
+}
+
+
+h1 { 
+    margin-top: 6rem;
+	color: rgb(34, 40, 51); 
+	margin-bottom: -5px; 
+	font-family: 'Poppins';
+
+} 
+
+.first { 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+} 
+.row { 
+	display: flex; 
+} 
+.box { 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: none; 
+	width: 100px; 
+	height: 100px; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	font-size: 23px;
+	color:black;
+    padding:5px; 
+	text-align: center; 
+	cursor: pointer; 
+	font-family: 'Poppins';
+
+} 
+.box:active { 
+	outline: none; 
+} 
+
+
+/* box part starts here  */
+
+
+#b1{ 
+	border-bottom: 1px solid gray; 
+	border-right: 1px solid gray; 
+} 
+
+#b2 { 
+	border-bottom: 1px solid gray; 
+	border-right: 1px solid gray; 
+	border-left: 1px solid gray; 
+} 
+
+#b3 { 
+	border-bottom: 1px solid gray; 
+	border-left: 1px solid gray; 
+} 
+
+#b4 { 
+	border-top: 1px solid gray; 
+	border-bottom: 1px solid gray; 
+	border-right: 1px solid gray; 
+} 
+	
+#b5 { 
+	border: 1px solid gray; 
+} 
+
+#b6 { 
+	border-top: 1px solid gray; 
+	border-bottom: 1px solid gray; 
+	border-left: 1px solid gray; 
+} 
+
+#b7 { 
+	border-top: 1px solid gray; 
+	border-right: 1px solid gray; 
+} 
+
+#b8 { 
+	border-top: 1px solid gray; 
+	border-right: 1px solid gray; 
+	border-left: 1px solid gray; 
+} 
+
+#b9 { 
+	border-top: 1px solid gray; 
+	border-left: 1px solid gray; 
+} 
+
+
+/* for reset buttton  */
+
+
+#for-reset { 
+	box-sizing: border-box; 
+	width: 100px; 
+	height: 50px; 
+	border: 1px solid rgb(59, 65, 72); 
+	margin-left: auto; 
+	border-radius: 15px; 
+	background-color: rgb(236, 227, 159); 
+	color: rgb(34, 35, 35); 
+	font-size: 20px; 
+	cursor: pointer; 
+} 
+
+#for-reset:hover {
+	color: rgb(236, 227, 159); 
+	background-color: rgb(172, 175, 175); 
+	font-family: 'Poppins';
+	
+}
+
+#print { 
+	color: rgb(0, 0, 0); 
+	font-size: 50px; 
+	font-family: 'Poppins';
+
+} 
+
+
+
+
+#container{ 
+	font-family: 'Poppins';
+
+	text-align: center; 
+} 
+

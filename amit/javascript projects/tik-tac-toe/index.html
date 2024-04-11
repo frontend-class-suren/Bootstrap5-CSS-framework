@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head> 
+<body> 
+    <div id="container"> 
+        <h1>TIC TAC TOE</h1> 
+		<br><br> 
+		<div class = "first"> 
+            <div class="row"> 
+                <input type="text" id= "b1"
+                class="box" onclick="myfunc_3(); myfunc();"
+                readonly> 
+				<input type="text" id= "b2"
+                class="box" onclick="myfunc_4(); myfunc();"
+                readonly> 
+				<input type="text" id= "b3" class="box"
+                onclick="myfunc_5(); myfunc();"
+                readonly> 
+			</div> 
+			<div class="row"> 
+                <input type="text" id= "b4"
+                class="box" onclick="myfunc_6(); myfunc();"
+                readonly> 
+				<input type="text" id= "b5"
+                class="box" onclick="myfunc_7(); myfunc();"
+                readonly> 
+				<input type="text" id= "b6"
+                class="box" onclick="myfunc_8(); myfunc();"
+                readonly> 
+			</div> 
+			<div class="row"> 
+                <input type="text" id= "b7"
+                class="box" onclick="myfunc_9(); myfunc();"
+                readonly> 
+				<input type="text" id= "b8"
+                class="box" onclick="myfunc_10();myfunc();"
+                readonly> 
+				<input type="text" id= "b9"
+                class="box" onclick="myfunc_11();myfunc();"
+                readonly> 
+			</div> 
+		</div> 
+		<br><br><br> 
+		
+		<button id="for-reset" onclick="myfunc_2()"> 
+			RESET 
+		</button> 
+		<br><br> 
+		<p id="print"></p> 
+	</div> 
+    <script src="script.js"></script> 
+</body> 
+
+</html>
